@@ -38,6 +38,7 @@ export default function App() {
             <img src="../src/images/illustration-working.svg" alt="" />
           </div>
         </div>
+        <div>Hiiiii</div>
       </section>
     </div>
   )
