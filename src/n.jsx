@@ -1,5 +1,6 @@
-import { RxHamburgerMenu } from "react-icons/rx";
-export default function App() {
+import React from 'react'
+
+export default function n() {
   return (
     <div>
       {/* nav */}
@@ -15,23 +16,13 @@ export default function App() {
             </div>
           </div>
           {/* right menu */}
-          <div className="font-bold text-gray-400 space-x-6 lg:flex items-center">
+          <div className="hidden font-bold text-gray-400 space-x-6 lg:flex items-center">
             <a href="" className="hover:text-gray-700">Login</a>
             <a href="" className="px-6 py-3 text-white bg-cyan-500 rounded-full hover:opacity-70">Sign Up</a>
           </div>
           {/* todo hamburger */}
-          <RxHamburgerMenu className=" absolute top-9 right-10 lg:hidden" />
         </div>
         {/* todo menu*/}
-        <div className=" absolute font-bold p-6 text-white left-6 right-6 top-20 z-100 flex-col space-y-5 items-center justify-center md:hidden bg-purple-900 rounded-lg opacity-80">
-          <div className="flex flex-col items-center justify-center space-y-4 w-full">
-            <a href="" className="hover:scale-110 w-full text-center hover:text-cyan-500">Features</a>
-            <a href="" className="hover:scale-110 w-full text-center hover:text-cyan-500">Pricing</a>
-            <a href="" className="hover:scale-110 w-full text-center hover:text-cyan-500">Resource</a>
-            <a href="" className="w-full border-t p-2 text-center">Login</a>
-            <a href="" className="w-full text-center p-4 rounded-full bg-cyan-500 hover:bg-cyan-600">Sign Up</a>
-          </div>
-        </div>
       </nav>
       {/* hero section */}
       <section id="hero">
@@ -86,17 +77,16 @@ export default function App() {
         </div>
       </section>
       {/* statistics section */}
-      <section id="stats" className="p-24 ">
+      <section id="stats" className="p-24 bg-gray-200">
         <div className=" container mx-auto  px-3">
           <h1 className="text-2xl font-bold mb-6 text-center lg:text-4xl">Advance Statistics</h1>
           <p className="max-w-xs mx-auto text-gray-400 text-center md:max-w-md">simply dummy text of the printing and typesetting industry.</p>
         </div>
       </section>
       {/* Feature box section */}
-      
-      <section id="feature" className="pb-24 bg-gray-200 ">
+      <section id="feature" className="pb-24 bg-gray-200">
         <div className="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7">
-          <div className="hidden absolute top-24 left-24 w-10/12 h-3 bg-cyan-400 md:block"></div>
+          <div className="hidden absolute top-24 left-28 w-10/12 h-3 bg-cyan-400 md:block"></div>
           <div className="absolute w-2 h-full left-1/2 -ml-1 bg-cyan-500 md:hidden"></div>
           {/* box 1 */}
           <div className="relative flex flex-col p-6 bg-white rounded-lg md:w-1/3">
@@ -136,56 +126,6 @@ export default function App() {
           </div>
         </div>
       </section>
-      {/* CTA section */}
-      <section id="cta" className="py-24 bg-violet-400">
-        <div className="flex flex-col p-2 space-y-6">
-          <h5 className="mx-auto text-center text-white text-4xl font-bold">Boost your links today</h5>
-          <button className="py-5 px-10 bg-cyan-500 mx-auto text-2xl text-white rounded-full hover:bg-cyan-600 font-bold">Get started</button>
-        </div>
-      </section>
-      {/* footer */}
-
-      <footer id="footer" className="py-16 bg-black">
-        <div className="flex flex-col items-center justify-between md:items-start md:flex-row space-y-10 md:space-y-0 md:space-x-20 md:px-10">
-          <img src="../src/images/logo.svg" alt="" />
-          {/* menu */}
-          <div className="flex flex-col items-center md:items-start">
-            <div className="font-bold text-white mb-5">Features</div>
-            <div className="flex flex-col space-y-3 items-center md:items-start">
-              <a href="" className="text-gray-500 hover:text-cyan-500">Links shorten</a>
-              <a href="" className="text-gray-500 hover:text-cyan-500">Brand links</a>
-              <a href="" className="text-gray-500 hover:text-cyan-500">Analytics</a>
-            </div>
-          </div>
-          {/* second */}
-          <div className="flex flex-col items-center md:items-start">
-            <div className="font-bold text-white mb-5">Resource</div>
-            <div className="flex flex-col space-y-3 items-center md:items-start">
-              <a href="" className="text-gray-500 hover:text-cyan-500">Blog</a>
-              <a href="" className="text-gray-500 hover:text-cyan-500">Developers</a>
-              <a href="" className="text-gray-500 hover:text-cyan-500">Support </a>
-            </div>
-          </div>
-          {/* third */}
-          <div className="flex flex-col items-center md:items-start">
-            <div className="font-bold text-white mb-5">Company</div>
-            <div className="flex flex-col space-y-3 items-center md:items-start">
-              <a href="" className="text-gray-500 hover:text-cyan-500">About</a>
-              <a href="" className="text-gray-500 hover:text-cyan-500">Our Teams</a>
-              <a href="" className="text-gray-500 hover:text-cyan-500">Contacts</a>
-              <a href="" className="text-gray-500 hover:text-cyan-500">Careers</a>
-              
-            </div>
-          </div>
-          {/* logos */}
-          <div className="flex space-x-8">
-            <img src="../src/images/icon-instagram.svg" alt="" className="hover:cursor-pointer"/>
-            <img src="../src/images/icon-pinterest.svg" alt="" className="hover:cursor-pointer"/>
-            <img src="../src/images/icon-twitter.svg" alt="" className="hover:cursor-pointer"/>
-            <img src="../src/images/icon-facebook.svg" alt="" className="hover:cursor-pointer"/>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
